@@ -1,0 +1,41 @@
+﻿<div class ="container">
+    <h1 id="HistoriasIndex">Historias</h1>
+    <br>
+    <a class="btn-primary" href="/historiaclinica/create">Nueva Historia</a>
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Nombre mascota</td>
+                <td>Sexo</td>
+                <td>Especie</td>
+                <td>Raza</td>
+                <td>Tamanio</td>
+                <td>Datospart</td>
+                <td>Nombre dueño</td>
+                <td>Direccion</td>
+                <td>Telefono</td>
+                <td>email</td>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.NombreMascota</td>
+                    <td>@item.Sexo</td>
+                    <td>@item.Especie</td>
+                    <td>@item.Raza</td>
+                    <td>@item.Tamanio</td>
+                    <td>@item.Datospart</td>
+                    <td>@item.NombreDueño</td>
+                    <td>@item.Direccion</td>
+                    <td>@item.Telefono</td>                  
+                    <td>@item.email</td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

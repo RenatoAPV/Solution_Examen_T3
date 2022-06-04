@@ -1,0 +1,85 @@
+﻿<div class="container">
+    <div class="row">   
+        <div class="col-6 offset-3">
+            <h1 id="NuevoHistorial">Crear Nuevo Historial</h1>
+            <form action="/historiaclinica/create" method="post">
+
+                 <div class="mb-3">
+                    <label for="Fecha">Fecha</label>
+                    <input type="datetime-local" class="form-control" Name="Fecha" id="Fecha">    
+                </div>
+
+                <div class="mb-3">
+                    <label for="NombreMascota">NombreMascota</label>
+                    <input type="text" class="form-control" Name="NombreMascota" id="NombreMascota"> 
+                     @Html.ValidationMessage("NombreMas")
+                </div>
+
+                
+                 <div class="mb-3">
+                    <label for="FechaNacimientoMascota">FechaNacimientoMascota</label>
+                    <input type="datetime-local" class="form-control" Name="FechaNacimientoMascota" id="FechaNacimientoMascota">    
+                </div>
+
+                <div>
+                    <label for="Sexo">Sexo</label>
+                     <select class="form-select" name = "Sexo" id= "Sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="Especie">Especie</label>
+                     <select class="form-select" name = "Especie" id= "Especie">
+                        <option value="Especie1">Especie1</option>
+                        <option value="Especie2">Especie2</option>
+                    </select>
+                </div>      
+                
+                <div>
+                    <label for="Raza">Raza</label>
+                     <select class="form-select" name = "Raza" id= "Raza">
+                        <option value="Raza1">Raza1</option>
+                        <option value="Raza2">Raza2</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Tamanio">Tamaño</label>
+                    <input type="text" class="form-controll" name="Tamanio" id="Tamanio"> 
+                </div>
+                               
+                <div class="mb-3">
+                    <label for="Datospart">Datos Particulares</label>
+                    <input type="text" class="form-controll" name="Datospart" id="Datospart"> 
+                </div>
+
+                <div class="mb-3">
+                    <label for="NombreDueño">NombreDueño</label>
+                    <input type="text" class="form-controll" name="NombreDueño" id="NombreDueño"> 
+                     @Html.ValidationMessage("NombreDue")
+                </div>
+
+                <div class="mb-3">
+                    <label for="Direccion">Direccion</label>
+                    <input type="text" class="form-controll" name="Direccion" id="Direccion"> 
+                     @Html.ValidationMessage("Direccion")
+                </div>
+
+                <div class="mb-3">
+                    <label for="Telefono">Telefono</label>
+                    <input type="text" class="form-controll" name="Telefono" id="Telefono"> 
+                     @Html.ValidationMessage("Telefono")
+                </div>
+
+                <div class="mb-3">
+                    <label for="email">Correo</label>
+                    <input type="text" class="form-controll" name="email" id="email"> 
+                </div>
+                <button class = "btn btn-primary">Guardar</button>
+
+            </form>
+         </div>
+    </div>
+</div>
